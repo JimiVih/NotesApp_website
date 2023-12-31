@@ -19,7 +19,7 @@
 
     let messages;
 
-    let messageBoxStyle = "border: solid 2px gray; margin-top: 20px; width: 400px; height: 100px; vertical-align:top; overflow-y:scroll; word-wrap: break-word;"
+    let messageBoxStyle = "border: solid 2px gray; margin-top: 20px; width: 400px; height: 100px; vertical-align:top; overflow-y:scroll; word-wrap: break-word; background-color:white;"
     
 
     function checkIfnoteAdded() {

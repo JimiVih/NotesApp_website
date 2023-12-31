@@ -32,6 +32,7 @@
     .noteBox{
         display: inline-block;
         border: solid 2px gray;
+        background-color: white;
         margin-top: 20px;
         width: 500px;        
     }
