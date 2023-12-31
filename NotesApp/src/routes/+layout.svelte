@@ -1,4 +1,5 @@
 <script>
+    import '../styles/global.css'
     import {goto} from '$app/navigation'
     const gotoMenu = () =>{
         goto("/");
@@ -7,7 +8,7 @@
 
 <header>
     
-        <h1 on:click={gotoMenu}> NotesApp</h1>
+    <h1 on:click={gotoMenu} id="Title"> NotesApp</h1>
     
     
 </header>
@@ -18,15 +19,4 @@
     ©NotesApp 2023
 </footer>
 
-<style>
-    h1{
-        width: 150px;
-    }
-    h1:hover{
-        cursor: pointer;
-    }
 
-    #copyright{
-        margin-top: 50px;
-    }
-</style>

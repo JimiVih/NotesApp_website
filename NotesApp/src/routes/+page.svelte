@@ -16,7 +16,12 @@
     }
 </script>
 
+<div style="margin:auto;">
+    <div id="menuButtons">
+        <button id="newNote" on:click={buttonPressed}>Create new NOTE</button>
+        <button id="newCourse" on:click={buttonPressed}>Create new COURSE</button>
+        <button id="listNotes" on:click={buttonPressed}>List NOTES</button>
+    </div>
+</div>
 
-<button id="newNote" on:click={buttonPressed}>Create new NOTE</button>
-<button id="newCourse" on:click={buttonPressed}>Create new COURSE</button>
-<button id="listNotes" on:click={buttonPressed}>List NOTES</button>
+
