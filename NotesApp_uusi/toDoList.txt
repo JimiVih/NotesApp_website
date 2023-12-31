@@ -1,0 +1,13 @@
+täytyy listata viestit:
+-ei minkään mukaan(eli all) eli voi olla valmiiksi option elementti jolla id on 0
+-tietyn kurssin mukaan
+-poistaa muistio
+-poistaa kurssi?
+
+ottaa valmiit kurssit ja muistiot sivulta
+
+katso läpi tehtävän anto ja tee tarvittavat korjaukset ja lisäykset
+
+tallentaa tehdyt kurssit ja muistiot
+
+lopuksi jos jää aikaa, sivun ulkomuoto
