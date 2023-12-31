@@ -4,6 +4,9 @@
     let name = "";
     let id = 0;
 
+    let messages;
+    
+
     function SaveNewCourse() {
         if(name != ""){
 
@@ -16,9 +19,16 @@
             
             let course = {id, name};
             courses.add(course);
+
+            const message = document.createElement('p');
+            message.textContent = "Opintojako " + "'" + name + "'" + " lisätty id:llä " + id;
+            messages.appendChild(message);
+
             name = "";
             id++;
             console.log(course);
+
+            
         }
     }
 </script>
@@ -29,4 +39,8 @@
 
     <button id="saveNote" on:click={SaveNewCourse}>Save</button>
     <button id="Back">Back</button>
+
+    <div id="messages" bind:this={messages}>
+
+    </div>
 </div>

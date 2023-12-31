@@ -1,11 +1,18 @@
 <script>
     import {goto} from '$app/navigation';
+    import {courses} from '$lib/courseStore.js'
 
     const buttonPressed = (e) => {
-        let buttonID = e.target.id;
-        console.log(buttonID);
+        if(e.target.id == "newNote" && $courses.length == 0){
+            console.log("There are no courses available");
+        }
+        else{
+            let buttonID = e.target.id;
+            console.log(buttonID);
 
-        goto(buttonID);
+            goto(buttonID);
+        }
+        
     }
 </script>
 

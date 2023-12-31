@@ -19,7 +19,7 @@
 
     let messages;
 
-    let messageBoxStyle = "border: solid 2px gray; margin-top: 20px; width: 400px; height: 100px; vertical-align:top; overflow-y:scroll;"
+    let messageBoxStyle = "border: solid 2px gray; margin-top: 20px; width: 400px; height: 100px; vertical-align:top; overflow-y:scroll; word-wrap: break-word;"
     
 
     function checkIfnoteAdded() {
@@ -53,15 +53,17 @@
             let day = date.getDate().toString().padStart(2, '0');
             let month = (date.getMonth() + 1).toString().padStart(2, '0');
             let year = date.getFullYear().toString().slice(-2);
+            let hour = date.getHours().toString();
+            let minute = date.getMinutes().toString();
             console.log(day, month, year);
-            timeStamp = day + "." + month + "." + year;
+            timeStamp = "Date: " + day + "." + month + "." + year + " Time: " + hour + ":" + minute;
 
             let note = {noteId, noteText, courseId, courseName, timeStamp};
             notes.add(note);
 
             const message = document.createElement('p');
             message.style = messageBoxStyle;
-            message.textContent = noteText + noteId;
+            message.textContent = noteText;
             messages.appendChild(message);
 
             noteText = '';
@@ -98,6 +100,8 @@
 
 
 <style>
-
+    #messages{
+        
+    }
 
 </style>

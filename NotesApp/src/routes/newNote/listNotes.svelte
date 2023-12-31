@@ -7,6 +7,7 @@
     let id;
     let labelElement;
 
+    let breik = false;
 
 
     
@@ -24,15 +25,21 @@
     <div style="width: 500px;">
         {#each $notes as note}
 
+        
+            
+        
             {#if id == 0}
             
                 <Note {...note}/> 
             {/if}
             {#if note.courseId == id && id != 0}
+                    
                   <Note {...note}/> 
             {/if}
+            
 
-            {:else}
+        
+
                 
             
         {/each}

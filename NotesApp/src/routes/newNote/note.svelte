@@ -25,7 +25,7 @@
 <style>
 
     .deleteButton{
-        transform: translateX(470px);
+        transform: translate(470px, 5px)
         
     }
 
@@ -36,7 +36,12 @@
         width: 500px;        
     }
     .noteBox h3{
-        transform: translateY(-40px);
+        transform: translateY(-30px);
         width: 450px;
+    }
+    .noteBox p{
+        word-wrap: break-word;
+        transform: translateY(-30px);
+        margin: auto;
     }
 </style>

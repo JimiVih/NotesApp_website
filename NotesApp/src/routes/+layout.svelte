@@ -14,7 +14,7 @@
 <main>
     <slot></slot>
 </main>
-<footer>
+<footer id="copyright">
     ©NotesApp 2023
 </footer>
 
@@ -24,5 +24,9 @@
     }
     h1:hover{
         cursor: pointer;
+    }
+
+    #copyright{
+        margin-top: 50px;
     }
 </style>
